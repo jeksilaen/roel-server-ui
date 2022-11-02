@@ -14,26 +14,85 @@ const Pricing = () => {
         {/* Cards */}
         <div className="flex flex-col w-2/3 h-full space-x-5 md:flex-row md:items-end">
           {/* Card 1 */}
-          <div className="flex flex-col drop-shadow-md bg-white h-[87%] w-1/3 rounded-xl">
-
+          <div className="flex flex-col py-5 drop-shadow-md bg-violet-600 text-white h-[87%] w-1/3 rounded-xl justify-between">
+            {/* Content */}
+            <div className='space-y-4 text-center'>
+              <p>Basic</p>
+              <h2 className='text-5xl font-bold'>$2.00</h2>
+              <hr className='w-[80%] mx-auto border-2 bg-white' />
+              <ul className='list-disc w-[70%] mx-auto text-left space-y-3 font-semibold'>
+                <li>lorem ipsum</li>
+                <li>lorem ipsum</li>
+                <li>lorem ipsum</li>
+              </ul>
+            </div>
+            
+            {/* CTA */}
+            <button className='bg-white font-bold text-violet-600 w-[60%] mx-auto h-[40px] rounded-xl hover:bg-slate-600 hover:text-white'>Get Started</button>
           </div>
+
           {/* Card 2 */}
-          <div className="flex flex-col drop-shadow-md bg-white h-full w-1/3 rounded-xl">
-
+          <div className="flex flex-col py-5 drop-shadow-md bg-slate-800 text-white h-full w-1/3 rounded-xl justify-between">
+            {/* Content */}
+            <div className='space-y-4 text-center'>
+              <p>Ultimate</p>
+              <h2 className='text-5xl font-bold'>$5.00</h2>
+              <hr className='w-[80%] mx-auto border-2 bg-white' />
+              <ul className='list-disc w-[70%] mx-auto text-left space-y-3 font-semibold'>
+                <li>lorem ipsum</li>
+                <li>lorem ipsum</li>
+                <li>lorem ipsum</li>
+                <li>lorem ipsum</li>
+                <li>lorem ipsum</li>
+                <li>lorem ipsum</li>
+              </ul>
+            </div>
+            
+            {/* CTA */}
+            <button className='bg-white font-bold text-slate-800 w-[60%] mx-auto h-[40px] rounded-xl hover:bg-slate-600 hover:text-white'>Get Started</button>
           </div>
-          {/* Card 3 */}
-          <div className="flex flex-col drop-shadow-md bg-white h-[87%] w-1/3 rounded-xl">
 
+          {/* Card 3 */}
+          <div className="flex flex-col py-5 drop-shadow-md bg-slate-800 text-white h-[87%] w-1/3 rounded-xl justify-between">
+            {/* Content */}
+            <div className='space-y-4 text-center'>
+              <p>Premium</p>
+              <h2 className='text-5xl font-bold'>$2.00</h2>
+              <hr className='w-[80%] mx-auto border-2 bg-white' />
+              <ul className='list-disc w-[70%] mx-auto text-left space-y-3 font-semibold'>
+                <li>lorem ipsum</li>
+                <li>lorem ipsum</li>
+                <li>lorem ipsum</li>
+              </ul>
+            </div>
+            
+            {/* CTA */}
+            <button className='bg-white font-bold text-slate-800 w-[60%] mx-auto h-[40px] rounded-xl hover:bg-slate-600 hover:text-white'>Get Started</button>
           </div>
         </div>
 
       </div>
 
-      <hr className="my-16" />
+      <hr className="w-[88%] mx-auto my-0" />
 
-      <div className="flex flex-col-reverse md:flex-row">
+      <div className="flex flex-col-reverse justify-between bg-slate-700 md:flex-row mx-0 items-center h-[16%] px-[4rem] text-white">
+        {/* Logo */}
+        <div className="flex justify-around space-x-3 items-center">
+          <h4 className='text-3xl font-semibold'>ROEL</h4>
+          <div className='text-[13px] flex flex-col font-extralight space-y-[-7px]'>
+            <p>Serveroel</p>
+            <p>uwutechroell inc</p>
+          </div>
+        </div>
 
+        {/* Socials */}
+        <div className="flex justify-around items-center w-[25%] font-semibold">
+          <p className='text-6lg text-bold hover:cursor-pointer'>Youtube</p>
+          <p className='text-6lg text-bold hover:cursor-pointer'>Instagram</p>
+          <p className='text-6lg text-bold hover:cursor-pointer'>LinkedIn</p>
+        </div>
       </div>
+
     </div>
   )
 }
